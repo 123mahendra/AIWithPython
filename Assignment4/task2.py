@@ -1,3 +1,6 @@
+
+#####Task 2#####
+
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
@@ -21,7 +24,7 @@ model.fit(xValue, yValue)
 
 yValuePredict = model.predict(xValue)
 
-plt.scatter(xValue, yValue, color='red')
+plt.scatter(xValue, yValue,color='red')
 plt.plot(xValue, yValuePredict, color='blue', label='Linear Regression')
 plt.xlabel('Height')
 plt.ylabel('Weight')
