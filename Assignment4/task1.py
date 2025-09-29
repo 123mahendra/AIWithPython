@@ -12,10 +12,10 @@ for n in valuesOfN:
 
     sumOfDices = firstDice + secondDice
 
-    h, h2 = np.histogram(sumOfDices, range(2, 14))
+    h,h2 = np.histogram(sumOfDices, range(2, 14))
 
     plt.bar(h2[:-1], h/n)
 
-    plt.title(f"Dice Sum Distribution (n={n})")
+    plt.title(f"n={n}")
 
     plt.show()
